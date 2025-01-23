@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import { QueryInterface } from 'sequelize';
 
-export = {
+export default {
   async up(queryInterface: QueryInterface) {
     const hashedPassword = await bcrypt.hash('Admin123!', 10);
 
