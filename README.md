@@ -46,6 +46,9 @@ DB_PORT=5432
 REDIS_HOST=redis
 REDIS_PORT=6379
 
+npx sequelize-cli db:seed --seed 20250123044152-seed-super-admin.ts
+
+
 #if build with docker and Start the Project with Docker
 docker-compose build
 docker-compose up
